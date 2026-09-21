@@ -1,0 +1,28 @@
+class Circle {
+    // Declaring field
+    double radius;
+
+    // Method to calculate area
+    void calculateArea() {
+        double area = Math.PI * radius * radius;
+        System.out.println("Area of Circle = " + area);
+    }
+
+    // Method to calculate circumference
+    void calculateCircumference() {
+        double circumference = 2 * Math.PI * radius;
+        System.out.println("Circumference of Circle = " + circumference);
+    }
+
+    public static void main(String[] args) {
+        // Creating object of Circle class
+        Circle c = new Circle();
+
+        // Assigning value to radius
+        c.radius = 5;
+
+        // Calling methods
+        c.calculateArea();
+        c.calculateCircumference();
+    }
+}
