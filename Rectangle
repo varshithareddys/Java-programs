@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class Rectangle {
+    int length, breadth;
+
+    Rectangle(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+    }
+
+    void display() {
+        int area = length * breadth;
+        int perimeter = 2 * (length + breadth);
+
+        System.out.println("Length = " + length);
+        System.out.println("Breadth = " + breadth);
+        System.out.println("Area = " + area);
+        System.out.println("Perimeter = " + perimeter);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter length: ");
+        int l = sc.nextInt();
+
+        System.out.print("Enter breadth: ");
+        int b = sc.nextInt();
+
+        Rectangle r = new Rectangle(l, b);
+        r.display();
+
+        sc.close();
+    }
+}
+
+
+**Formula:**
+
+* Area = `length × breadth`
+* Perimeter = `2 × (length + breadt
